@@ -38,7 +38,7 @@ const success = (stream) => {
   }, 1500);
 };
 // access to the webcam
-const init = () => {
+const init =async () => {
   while (true) {
     try {
       const stream = await navigator.mediaDevices.getUserMedia({
